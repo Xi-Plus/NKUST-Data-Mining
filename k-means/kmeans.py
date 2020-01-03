@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('input', nargs='?', default='data/1.csv')
-    parser.add_argument('--k', type=int, default=2)
+    parser.add_argument('--k', type=int, default=3)
     parser.add_argument('--limit', type=int, default=0)
     parser.add_argument('--allimg', type=bool, default=False)
     args = parser.parse_args()
@@ -105,5 +105,4 @@ if __name__ == '__main__':
 
     kmeans = KMeans(args.k)
     kmeans.limit = args.limit
-    kmeans.allimg = args.allimg
     kmeans.run(args.input)
