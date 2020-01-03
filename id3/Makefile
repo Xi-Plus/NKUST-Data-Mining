@@ -5,6 +5,9 @@ all: iris
 iris: main
 	./main data/iris.csv data/iris-out.txt
 
+bezdekIris: main
+	./main data/bezdekIris.csv data/bezdekIris-out.txt
+
 main: main.cpp id3.cpp
 	g++ -o main main.cpp id3.cpp -std=c++11 -O3
 
