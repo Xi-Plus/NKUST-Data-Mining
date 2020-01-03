@@ -1,6 +1,7 @@
 import argparse
 import csv
 import logging
+import os
 import random
 import time
 
@@ -48,6 +49,8 @@ class KMeans():
     def run(self, inputpath):
         starttime = time.time()
 
+        filename = os.path.splitext(inputpath)[0]
+
         self.data = []
         with open(inputpath) as csvfile:
             csvreader = csv.reader(csvfile)
@@ -88,6 +91,7 @@ class KMeans():
             for point in group:
                 # print(gid, point, colors[gid])
                 plt.plot(point[0], point[1], colors[gid], marker='o')
+        plt.savefig('{}.jpg'.format(filename))
         plt.show()
 
 
