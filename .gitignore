@@ -1,4 +1,8 @@
+*.data
 *.exe
+*.o
+*out*.txt
+apriori/itemsets.csv
 id3/data/*-out.txt
 k-means/data/*.csv
 k-means/data/*.jpg
