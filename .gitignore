@@ -4,6 +4,7 @@
 *out*.txt
 apriori/data/
 apriori/itemsets.csv
+fp-tree/data/
 id3/data/*-out.txt
 k-means/data/*.csv
 k-means/data/*.jpg
