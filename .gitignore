@@ -2,6 +2,7 @@
 *.exe
 *.o
 *out*.txt
+apriori/data/
 apriori/itemsets.csv
 id3/data/*-out.txt
 k-means/data/*.csv
